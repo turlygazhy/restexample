@@ -6,6 +6,9 @@ public class User {
     private String login;
     private String email;
 
+    public User() {
+    }
+
     public User(String firstName, String lastName, String login, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
