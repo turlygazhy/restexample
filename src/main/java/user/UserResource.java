@@ -52,7 +52,7 @@ public class UserResource {
                     .build();
         }
 
-        User resultUser = userService.updateUser(user);
+        User resultUser = userService.updateUser(existUser, user);
         return Response.ok(resultUser).build();
     }
 

@@ -24,8 +24,7 @@ public class UserService {
                 .orElse(null);
     }
 
-    public User updateUser(User user) {
-        User userForUpdate = getUser(user.getFirstName());
+    public User updateUser(User userForUpdate, User user) {
         users.remove(userForUpdate);
         users.add(user);
         return user;
