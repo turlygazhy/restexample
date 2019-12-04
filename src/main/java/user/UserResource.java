@@ -7,7 +7,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
 
-@Path("user")
+@Path("/user")
 public class UserResource {
 
     private final static UserService userService = new UserService();
